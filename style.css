@@ -24,9 +24,6 @@ body {
 .row {
     display: flex;
     flex-direction: row;
-
-    justify-content: center;
-    align-items: center;
 }
 
 h1 {
@@ -50,11 +47,11 @@ a {
     margin: 20px;
 
     text-decoration: none;
-    box-shadow: 0 0 0 5px var(--background), 0 0 0 8px var(--text);
 
     transition: 0.3s all;
 }
 a:hover {
+    box-shadow: 0 0 0 5px var(--background), 0 0 0 8px var(--text);
     background-color: var(--text);
     color: var(--background);
     transform: scale(1.1);
@@ -70,17 +67,18 @@ img {
     border-radius: 50%;
 
     margin: 20px;
+    margin-left: -50px;
 
     background-size: cover;
     object-fit: cover;
     object-position: bottom;
 
-    box-shadow: 0 0 0 5px var(--background), 0 0 0 8px var(--text);
    
     cursor: pointer;
     transition: 0.3s all;
 }
 img:hover {
+    box-shadow: 0 0 0 5px var(--background), 0 0 0 8px var(--text);
     transform: scale(1.1);
 }
 img:active {
